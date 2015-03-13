@@ -1,0 +1,34 @@
+{
+  "name": "code-to-gist",
+  "version": "0.0.0",
+  "description": "This script transforms the code blocks in a Markdown file to GitHub gists and replace the blocks by the gists' url",
+  "main": "lib/code-to-gist.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fiddus/code-to-gist.git"
+  },
+  "keywords": [
+    "markdown",
+    "gist",
+    "code"
+  ],
+  "author": "Vinicius Teixeira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fiddus/code-to-gist/issues"
+  },
+  "homepage": "https://github.com/fiddus/code-to-gist",
+  "devDependencies": {
+    "chai": "^2.1.1",
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-mocha-test": "^0.12.7",
+    "mocha": "^2.2.1"
+  }
+}
