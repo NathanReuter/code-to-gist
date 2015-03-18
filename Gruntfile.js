@@ -3,6 +3,7 @@
 module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-mocha-test');
+    grunt.loadNpmTasks('grunt-jscs');
 
     grunt.initConfig({
         jshint: {
@@ -13,7 +14,18 @@ module.exports = function (grunt) {
             all: ['./**/*.js']
         },
 
-        mochaTest : {
+        jscs: {
+            src: [
+                'lib/**/*.js',
+                'test/**/*.js',
+                'Gruntfile.js'
+            ],
+            options: {
+                config: '.jscsrc'
+            }
+        },
+
+        mochaTest: {
             test: {
                 options: {
                     reporter: 'spec'
