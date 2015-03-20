@@ -2,10 +2,17 @@
     "disallowDanglingUnderscores": true,
     "disallowEmptyBlocks": true,
     "disallowFunctionDeclarations": true,
+    "disallowImplicitTypeConversion": [
+        "numeric",
+        "boolean",
+        "binary",
+        "string"
+    ],
     "disallowKeywords": ["with"],
     "disallowMultipleLineStrings": true,
     "disallowNewlineBeforeBlockStatements": true,
     "disallowSpaceAfterObjectKeys": true,
+    "disallowOperatorBeforeLineBreak": ["+", "."],
     "disallowSpaceAfterPrefixUnaryOperators": ["++", "--", "+", "-", "~", "!"],
     "disallowSpaceBeforePostfixUnaryOperators": ["++", "--"],
     "disallowSpacesInCallExpression": true,
@@ -15,6 +22,7 @@
     "disallowSpacesInsideParentheses": true,
     "disallowTrailingComma": true,
     "disallowTrailingWhitespace": true,
+    "disallowYodaConditions": true,
     "maximumLineLength": 120,
     "requireBlocksOnNewline": true,
     "requireCamelCaseOrUpperCaseIdentifiers": true,
@@ -96,6 +104,7 @@
         ">=",
         "<="
     ],
+    "requireSpaceAfterLineComment": { "allExcept": ["#", "="] },
     "requireSpaceBeforeBlockStatements": true,
     "requireSpaceBeforeKeywords": [
         "else",
@@ -124,6 +133,10 @@
         "beforeOpeningCurlyBrace": true
     },
     "requireSpacesInFunctionExpression": {
+        "beforeOpeningRoundBrace": true,
+        "beforeOpeningCurlyBrace": true
+    },
+    "requireSpacesInNamedFunctionExpression": {
         "beforeOpeningRoundBrace": true,
         "beforeOpeningCurlyBrace": true
     },
